@@ -13,6 +13,8 @@ def reverse(str):
         rev=i+rev
     return rev
 
+# @nd way to do it
+
 def decimal_to_binary_conversion2(dec):
     s=""
     while dec>0:
@@ -21,10 +23,16 @@ def decimal_to_binary_conversion2(dec):
         dec = dec >> 1
     return s
 
+# Direect way to do it
+
+def decimal_to_binary_conversion3(dec):
+    return bin(dec).replace("0b","")
 
 
 
 dec=int(input("Enter a binary number: "))
 print(decimal_to_binary_conversion(dec))
 print(decimal_to_binary_conversion2(dec))
+print(decimal_to_binary_conversion3(dec))
+
 
