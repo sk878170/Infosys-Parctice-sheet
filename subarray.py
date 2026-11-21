@@ -20,11 +20,11 @@ target = 7
 n = len(nums)
 result = []
 
-for i in range(n):
+for i in range(0,n,1): # 0 to 8 
     temp = []
     total = 0
 
-    for j in range(i, n):
+    for j in range(i, n): 
         temp.append(nums[j])
         total += nums[j]
 
